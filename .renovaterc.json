@@ -1,0 +1,58 @@
+{
+    "extends": [
+        "config:js-app"
+    ],
+    "labels": [
+        "dependencies"
+    ],
+    "assignees": [
+        "richardsimko"
+    ],
+    "assigneesSampleSize": 1,
+    "prHourlyLimit": 20,
+    "prCreation": "not-pending",
+    "stabilityDays": 5,
+    "dependencyDashboard": true,
+    "packageRules": [
+        {
+            "packagePatterns": [
+                "@waroncancer"
+            ],
+            "addLabels": [
+                "war-on-cancer"
+            ],
+            "stabilityDays": 0,
+            "prCreation": "immediate"
+        },
+        {
+            "updateTypes": [
+                "minor",
+                "patch",
+                "pin",
+                "digest",
+                "lockFileMaintenance"
+            ],
+            "automerge": true,
+            "automergeType": "branch",
+            "addLabels": [
+                "automerge"
+            ]
+        },
+        {
+            "matchDepTypes": [
+                "devDependencies"
+            ],
+            "automerge": true,
+            "automergeType": "branch",
+            "addLabels": [
+                "automerge"
+            ]
+        }
+    ],
+    "lockFileMaintenance": {
+        "enabled": true,
+        "schedule": [
+            "before 8am on monday"
+        ]
+    }
+}
