@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/WarOnCancer/renovate-test#readme",
   "dependencies": {
-    "eslint-plugin-import": "2.25.2"
+    "eslint-plugin-import": "2.25.3"
   }
 }
